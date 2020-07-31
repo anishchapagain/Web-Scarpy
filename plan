@@ -1,0 +1,44 @@
+Web Scrape - Preliminary Study
+------------------------------------
+1. www.roommatesindian.com
+- Site uses basic HTML content, searchable through City links! http://www.roommatesindian.com/desiroommate/indian-roommates-by-cities.asp
+
+- City urls are found containing details/links from another website. (ADDN_CHARGES)
+Example 1: https://www.seattleindian.com/desi/classifiedsDetails.asp?id=50935   
+
+http://www.roommatesindian.com/desiroommate/indian-roommates.asp?city=SUNNYVALE&state=CA
+http://www.roommatesindian.com/desiroommate/indian-roommates.asp?city=BOTHELL&state=WA
+
+Example 2: https://www.chicagoindian.com/desi/classifiedsDetails.asp?id=86652
+http://www.roommatesindian.com/desiroommate/indian-roommates.asp?city=NAPERVILLE%20&state=IL
+
+- Some Urls are also there with empty content! http://www.roommatesindian.com/desiroommate/searchresults.asp?q=Roommate%20In%20RAVIKUMAR.LAKKIREDDY@GMAIL.COM
+
+- There might be few more external web links and need to deal with their specific content or DOM structure!
+- To confirm: URLs, data (columns,structure to be extracted), specific sites to target
+- Crawl: will take time as site seems dynamic (i.e. Data update cases?).
+
+
+2. www.pragathi.com 
+https://www.pragathi.com/Roommates/Indian-Roommates-in-US/17 
+https://www.pragathi.com/Nanny/Indian-Nanny-in-US/26 
+https://www.pragathi.com/Cook-or-Chef/Indian-cook-in-US/27
+https://www.pragathi.com/Restaurant-Jobs/Indian-Restaurant-Jobs-in-US/68
+
+- Easy access to content! searchable through categories.
+
+- Various DOM structure found for category wise listings and their details.(ADDN_CHARGES)
+  
+
+
+
+
+Price Calculations:
+--------------------------------------
+- Normal setup charges: $49 per/site! 
+- Maximum volume: 25000 records!
+- Dataset (only) delieverd as CSV/XLSX or JSON
+- No Downloaded Content: ex: Images/Videos (Image/Videos URLs will be provided)!
+
+- Additional content: Normal setup charges + $15(New Urls encountered or New DOM structure)!
+- Additional volume charges: +$0.0019 per record!
