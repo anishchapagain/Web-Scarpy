@@ -1,5 +1,6 @@
 import scrapy
 from sulekha.items import SulekhaItem
+#position-8 > aside > section > article.event-desc.clearfix > div.locwrp > span.venuename > a
 
 class SulekhaSpiderSpider(scrapy.Spider):
     name = 'sulekha_spider'
@@ -24,7 +25,7 @@ class SulekhaSpiderSpider(scrapy.Spider):
             # Date = response.xpath('/html/body/div[4]/section[1]/div/article/article/div[1]/aside/section/article[1]/div[2]/span[1]/i').extract()
             item['Date']= response.css(".event-desc span:nth-child(1)::text").extract()
             # Drama_type = response.xpath('//*[@id="position-1"]/aside/section/article[1]/div[2]/span[2]/i/text()').extract()
-            item['Title'] = response.css('.venuename::text').extract()
+            item['Title'] = response.css('.venuename , .venuename a').css('::text').extract()
             # item['Event_Name']=Event_Name
             # item['Date'] = Date
             # item['Title']=Title
