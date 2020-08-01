@@ -18,7 +18,7 @@ NEWSPIDER_MODULE = 'sulekha.spiders'
 
 # Obey robots.txt rules
 ROBOTSTXT_OBEY = False
-
+# PROXY_POOL_ENABLED = True
 # Configure maximum concurrent requests performed by Scrapy (default: 16)
 #CONCURRENT_REQUESTS = 32
 
@@ -54,6 +54,12 @@ ROBOTSTXT_OBEY = False
 #    'sulekha.middlewares.SulekhaDownloaderMiddleware': 543,
 #}
 
+# DOWNLOADER_MIDDLEWARES = {
+#     # ...
+#     'scrapy_proxy_pool.middlewares.ProxyPoolMiddleware': 610,
+#     'scrapy_proxy_pool.middlewares.BanDetectionMiddleware': 620,
+#     # ...
+# }
 # Enable or disable extensions
 # See https://docs.scrapy.org/en/latest/topics/extensions.html
 #EXTENSIONS = {
