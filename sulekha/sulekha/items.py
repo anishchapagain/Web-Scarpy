@@ -14,5 +14,5 @@ class SulekhaItem(scrapy.Item):
     # Event_day = scrapy.Field()
     # Event_month=scrapy.Field()
     Date = scrapy.Field()
-    Drama_type = scrapy.Field()
+    Title = scrapy.Field()
     
